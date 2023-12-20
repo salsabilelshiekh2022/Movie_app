@@ -10,8 +10,8 @@ import 'widgets/anther_auth_account.dart';
 import 'widgets/no_account.dart';
 import 'widgets/sign_text.dart';
 
-class SignUpView extends StatelessWidget {
-  const SignUpView({super.key});
+class SignInView extends StatelessWidget {
+  const SignInView({super.key});
 
   @override
   Widget build(BuildContext context) {
