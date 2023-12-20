@@ -24,10 +24,20 @@ abstract class TextStyles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
   );
+  static TextStyle font28White500 = const TextStyle(
+    color: AppColors.white,
+    fontSize: 28,
+    fontWeight: FontWeight.w500,
+  );
 
   static TextStyle font32WhiteBold = const TextStyle(
     fontSize: 32,
     fontWeight: FontWeight.bold,
     color: AppColors.white,
+  );
+  static TextStyle font14DarkGrey500 = const TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.darkgrey,
   );
 }
