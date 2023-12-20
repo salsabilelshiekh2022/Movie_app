@@ -22,8 +22,10 @@ class AuthButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            "Login",
-            style: TextStyles.font28White500,
+            title,
+            style: TextStyles.font20White500.copyWith(
+              fontSize: 24,
+            ),
           ),
         ),
       ),

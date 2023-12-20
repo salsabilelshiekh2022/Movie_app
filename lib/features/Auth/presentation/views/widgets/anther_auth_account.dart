@@ -4,13 +4,14 @@ import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 
 class AnotherAuthButton extends StatelessWidget {
-  const AnotherAuthButton({super.key, required this.title});
+  const AnotherAuthButton({super.key, required this.title, this.onTap});
   final String title;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         width: double.infinity,
         height: 55,

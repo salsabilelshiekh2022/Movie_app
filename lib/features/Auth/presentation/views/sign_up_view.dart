@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/core/router/app_router.dart';
-import 'package:movie_app/core/utils/app_assets.dart';
-import 'package:movie_app/core/utils/app_colors.dart';
-import 'package:movie_app/core/utils/spacing.dart';
-import 'package:movie_app/features/Auth/presentation/views/sign_up_view.dart';
 
+import '../../../../core/utils/app_assets.dart';
+import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/spacing.dart';
 import '../../../../core/widgets/app_text_form_field.dart';
 import '../../../../core/widgets/auth_button.dart';
 import '../../../../core/widgets/auth_social_button.dart';
@@ -12,8 +10,8 @@ import 'widgets/anther_auth_account.dart';
 import 'widgets/no_account.dart';
 import 'widgets/sign_text.dart';
 
-class SignInView extends StatelessWidget {
-  const SignInView({super.key});
+class SignUpView extends StatelessWidget {
+  const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,12 +56,12 @@ class SignInView extends StatelessWidget {
                     ),
                     verticalSpace(30),
                     AuthButton(
-                      title: "Login",
+                      title: "Create Account",
                       onTap: () {},
                     ),
                     verticalSpace(30),
                     const SignText(
-                      title: "Sign in with",
+                      title: "AuthorizedWithSocialMedia",
                     ),
                     verticalSpace(12),
                     Row(
@@ -82,20 +80,15 @@ class SignInView extends StatelessWidget {
                     ),
                     verticalSpace(50),
                     const NoAccount(
-                      title: "NoAccount?",
+                      title: "AlreadyHaveAnAccount?",
                     ),
                     verticalSpace(12)
                   ],
                 ),
               ),
-              AnotherAuthButton(
-                title: "Create Account",
-                onTap: () {
-                  AppRouter.navigateTo(
-                    const SignUpView(),
-                  );
-                },
-              )
+              const AnotherAuthButton(
+                title: "Login",
+              ),
             ],
           ),
         ),
