@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/spacing.dart';
-import 'movie_info.dart';
+import 'movie_cinema.dart';
+import 'movie_rating.dart';
 import 'movie_time_widget.dart';
 
-class NewMovieItem extends StatelessWidget {
-  const NewMovieItem({super.key});
+class MovieItem extends StatelessWidget {
+  const MovieItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +18,8 @@ class NewMovieItem extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
           child: Image.network(
             "https://i.pinimg.com/564x/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg",
-            width: 220,
-            height: 280,
+            width: 120,
+            height: 170,
             fit: BoxFit.fill,
           ),
         ),
@@ -27,7 +28,8 @@ class NewMovieItem extends StatelessWidget {
           "Onwerd",
           style: TextStyles.font17White500,
         ),
-        const MovieInfo(),
+        const MovieRating(),
+        const MovieCinema(),
         verticalSpace(3),
         const MovieTimeWidget(),
       ],

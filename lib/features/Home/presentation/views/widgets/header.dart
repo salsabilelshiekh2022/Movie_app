@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
     return Align(
       alignment: Alignment.topLeft,
       child: Padding(
-        padding: const EdgeInsets.only(left: 24),
+        padding: const EdgeInsets.only(left: 24, bottom: 12),
         child: Text(
           title,
           style: TextStyles.font28White500,

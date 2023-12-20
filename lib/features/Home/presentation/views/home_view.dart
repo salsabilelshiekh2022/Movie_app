@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/core/utils/app_text_styles.dart';
 
 import '../../../../core/utils/app_colors.dart';
 import 'widgets/header.dart';
 import 'widgets/home_app_bar.dart';
 import 'widgets/new_movie_list.dart';
+import 'widgets/trending_movies_list.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -22,6 +22,7 @@ class HomeView extends StatelessWidget {
               Header(
                 title: "Trending Movies",
               ),
+              TrendingMoviesList()
             ],
           ),
         ),
