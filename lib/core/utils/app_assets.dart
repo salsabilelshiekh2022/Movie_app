@@ -1,6 +1,14 @@
 class AppAssets {
   AppAssets._();
 
+  /// Assets for imagesFacebook
+  /// assets/images/facebook.svg
+  static const String imagesFacebook = "assets/images/facebook.svg";
+
+  /// Assets for imagesGoogle
+  /// assets/images/google.svg
+  static const String imagesGoogle = "assets/images/google.svg";
+
   /// Assets for imagesLetsSignIn
   /// assets/images/lets_Sign_in.png
   static const String imagesLetsSignIn = "assets/images/lets_Sign_in.png";
