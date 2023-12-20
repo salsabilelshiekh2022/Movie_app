@@ -40,4 +40,9 @@ abstract class TextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.darkgrey,
   );
+  static TextStyle font12DarkGrey400 = const TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: AppColors.darkgrey,
+  );
 }
