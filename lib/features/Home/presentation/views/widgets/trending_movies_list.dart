@@ -8,7 +8,7 @@ class TrendingMoviesList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 300,
+      height: 302,
       child: ListView.builder(
         itemCount: 8,
         physics: const BouncingScrollPhysics(),

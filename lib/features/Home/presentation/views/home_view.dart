@@ -14,6 +14,7 @@ class HomeView extends StatelessWidget {
     return const Scaffold(
       backgroundColor: AppColors.black,
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: SafeArea(
           child: Column(
             children: [
@@ -22,7 +23,11 @@ class HomeView extends StatelessWidget {
               Header(
                 title: "Trending Movies",
               ),
-              TrendingMoviesList()
+              TrendingMoviesList(),
+              Header(
+                title: "Coming Soon",
+              ),
+              TrendingMoviesList(),
             ],
           ),
         ),

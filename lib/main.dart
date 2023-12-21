@@ -4,6 +4,7 @@ import 'package:movie_app/features/Home/presentation/views/home_view.dart';
 
 import 'core/utils/app_colors.dart';
 import 'core/utils/app_constants.dart';
+import 'features/movie_details/presentation/views/movie_details_view.dart';
 import 'features/splash/presentation/views/splash_view.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class MovieTime extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Movie Time ',
       onGenerateRoute: onGenerate,
-      home: const HomeView(),
+      home: const MovieDetailsView(),
     );
   }
 }

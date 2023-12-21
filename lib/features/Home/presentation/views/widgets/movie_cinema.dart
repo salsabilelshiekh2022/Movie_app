@@ -25,7 +25,7 @@ class MovieCinema extends StatelessWidget {
             child: Text(
               textAlign: TextAlign.center,
               "76",
-              style: TextStyles.font14DarkGrey500.copyWith(fontSize: 10),
+              style: TextStyles.font14White500.copyWith(fontSize: 10),
             ),
           ),
         ),

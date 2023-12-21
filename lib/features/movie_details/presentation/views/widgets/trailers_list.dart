@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+class TrailersList extends StatelessWidget {
+  const TrailersList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 120,
+      child: ListView.builder(
+          shrinkWrap: true,
+          itemCount: 3,
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(),
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.only(left: 24, bottom: 20),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(8),
+                child: Image.network(
+                  "https://i.pinimg.com/564x/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg",
+                  width: 150,
+                  height: 100,
+                  fit: BoxFit.fill,
+                ),
+              ),
+            );
+          }),
+    );
+  }
+}
