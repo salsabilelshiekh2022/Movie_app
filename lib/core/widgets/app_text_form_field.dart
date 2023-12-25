@@ -38,12 +38,12 @@ class AppTextFormField extends StatelessWidget {
         onSaved: onSave,
 
         style: TextStyles.font20White500,
-
         focusNode: focusNode,
         onEditingComplete: onEditingComplete,
         textInputAction: textInputAction,
         validator: validator, //
         decoration: InputDecoration(
+          errorStyle: const TextStyle(color: AppColors.hotPink),
           hintText: hintText,
           hintStyle: TextStyles.font20White500,
           border: const UnderlineInputBorder(
@@ -53,7 +53,8 @@ class AppTextFormField extends StatelessWidget {
           ),
           enabledBorder: inputBorder(AppColors.darkgrey),
           focusedBorder: inputBorder(AppColors.hotPink),
-          errorBorder: inputBorder(Colors.red[600]!),
+          errorBorder: inputBorder(AppColors.hotPink),
+          focusedErrorBorder: inputBorder(AppColors.hotPink),
         ),
       ),
     );
