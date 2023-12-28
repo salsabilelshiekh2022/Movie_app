@@ -13,7 +13,7 @@ class AnotherAuthButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
+        width: 375,
         height: 55,
         decoration: const BoxDecoration(
           gradient: LinearGradient(colors: [

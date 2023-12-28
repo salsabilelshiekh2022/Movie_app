@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/core/router/app_router.dart';
 import 'package:movie_app/core/utils/app_colors.dart';
 import 'package:movie_app/features/Auth/presentation/views/widgets/anther_auth_account.dart';
+import 'package:movie_app/features/Booking_process/presentation/views/book_process_view.dart';
 import 'package:movie_app/features/Home/presentation/views/widgets/header.dart';
 
 import '../../../../core/utils/app_text_styles.dart';
@@ -63,9 +65,14 @@ class MovieDetailsView extends StatelessWidget {
               ],
             ),
           ),
-          const Positioned(
+          Positioned(
             bottom: 0,
-            child: AnotherAuthButton(title: "Book Now "),
+            child: AnotherAuthButton(
+              title: "Book Now ",
+              onTap: () {
+                AppRouter.navigateTo(const BookProcessView());
+              },
+            ),
           )
         ],
       ),
