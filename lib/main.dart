@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/router/app_router.dart';
+import 'package:movie_app/features/tickets_details/presentation/views/tickets_details_view.dart';
 
 import 'core/utils/app_colors.dart';
 import 'core/utils/app_constants.dart';
@@ -30,7 +31,7 @@ class MovieTime extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Movie Time ',
       onGenerateRoute: onGenerate,
-      home: const SignInView(),
+      home: const TicketsDetailsView(),
     );
   }
 }
