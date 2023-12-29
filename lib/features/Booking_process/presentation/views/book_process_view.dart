@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/core/router/app_router.dart';
 import 'package:movie_app/core/utils/app_colors.dart';
 import 'package:movie_app/features/Booking_process/presentation/views/widgets/movie_booking_time.dart';
 
 import '../../../Auth/presentation/views/widgets/anther_auth_account.dart';
 import '../../../Home/presentation/views/widgets/header.dart';
 import '../../../movie_details/presentation/views/widgets/movie_details.dart';
+import '../../../order_tickets/presentation/views/order_tickets_view.dart';
 import 'widgets/booking_header.dart';
 import 'widgets/film_times_in_cinema_list.dart';
 
@@ -44,10 +46,13 @@ class BookProcessView extends StatelessWidget {
               ],
             ),
           ),
-          const Align(
+          Align(
             alignment: Alignment.bottomCenter,
             child: AnotherAuthButton(
               title: "Seats Selection",
+              onTap: () {
+                AppRouter.navigateTo(const OrderTicketsView());
+              },
             ),
           )
         ],

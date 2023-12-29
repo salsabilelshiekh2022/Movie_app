@@ -9,6 +9,10 @@ class AppAssets {
   /// assets/images/facebook.svg
   static const String imagesFacebook = "assets/images/facebook.svg";
 
+  /// Assets for imagesGlassesIcon
+  /// assets/images/glasses_icon.svg
+  static const String imagesGlassesIcon = "assets/images/glasses_icon.svg";
+
   /// Assets for imagesGoogle
   /// assets/images/google.svg
   static const String imagesGoogle = "assets/images/google.svg";
@@ -25,6 +29,10 @@ class AppAssets {
   /// assets/images/logo_without_background.png
   static const String imagesLogoWithoutBackground =
       "assets/images/logo_without_background.png";
+
+  /// Assets for imagesSeat
+  /// assets/images/seat.svg
+  static const String imagesSeat = "assets/images/seat.svg";
 
   /// Assets for imagesWelcomeMovies
   /// assets/images/welcome_movies.png
