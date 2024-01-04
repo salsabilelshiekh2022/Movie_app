@@ -34,6 +34,10 @@ class AppAssets {
   /// assets/images/seat.svg
   static const String imagesSeat = "assets/images/seat.svg";
 
+  /// Assets for imagesVisaIcon
+  /// assets/images/visa_icon.svg
+  static const String imagesVisaIcon = "assets/images/visa_icon.svg";
+
   /// Assets for imagesWelcomeMovies
   /// assets/images/welcome_movies.png
   static const String imagesWelcomeMovies = "assets/images/welcome_movies.png";
