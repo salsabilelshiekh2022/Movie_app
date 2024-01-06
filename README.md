@@ -1,16 +1,27 @@
-# movie_app
+# Movie Time Application 🎞🎞
+- Flutter Movies mobile app using API with many functionalities. 
+- BloC state management used to manage app's business logic.
 
-A new Flutter project.
+## ✨ Features
+- Easy to use
+- login and sign up user
+- Display trending movies.
+- Display now playing movies.
+- Display coming soon movies.
+- Display details of movie.
+- Smart design
 
-## Getting Started
+  ## 🔌 Packages
+- flutter_bloc
+- dio
+- flutter_svg
+- shared_preferences
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  ## 📸 ScreenShots
+| Movie Time                                     | Application                                 |
+| -----------------------------------------      | --------------------------------------------|
+| <img src="screen_shots/1.jpg" width="400">     | <img src="screen_shots/2.jpg" width="400">  |
+| <img src="screen_shots/3.jpg" width="400">     | <img src="screen_shots/4.jpg" width="400">  |
+| <img src="screen_shots/5.jpg" width="400">     | <img src="screen_shots/6.jpg" width="400">  |
+| <img src="screen_shots/7.jpg" width="400">     | <img src="screen_shots/8.jpg" width="400">  |
+| <img src="screen_shots/9.jpg" width="400">     | <img src="screen_shots/10.jpg" width="400"> |
