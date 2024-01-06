@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../../core/functions/snack_bar.dart';
 import '../../../../../../core/router/app_router.dart';
-import '../../../../../Home/presentation/views/home_view.dart';
+import '../../../../../profile_setting/presentation/views/profile_setting_view.dart';
 
 part 'sign_up_state.dart';
 
@@ -26,7 +26,7 @@ class SignUpCubit extends Cubit<SignUpState> {
     if (formKey.currentState!.validate()) {
       emit(SignUpLoading());
       showSnackBar("Success", Colors.green[700]!);
-      AppRouter.navigateAndPop(const HomeView());
+      AppRouter.navigateTo(const ProfileScreenView());
 
       emit(SignUpInitial());
     } else {

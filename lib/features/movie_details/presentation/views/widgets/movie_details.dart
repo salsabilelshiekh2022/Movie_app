@@ -6,7 +6,8 @@ import '../../../../Home/presentation/views/widgets/movie_rating.dart';
 import '../../../../Home/presentation/views/widgets/movie_time_widget.dart';
 
 class MovieDetails extends StatelessWidget {
-  const MovieDetails({super.key});
+  const MovieDetails({super.key, required this.rating});
+  final String rating;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,9 @@ class MovieDetails extends StatelessWidget {
         children: [
           Row(
             children: [
-              const MovieRating(),
+              MovieRating(
+                rating: rating,
+              ),
               horizontalSpace(8),
               const MovieCinema(),
             ],

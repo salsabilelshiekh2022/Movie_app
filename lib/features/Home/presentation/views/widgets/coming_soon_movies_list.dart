@@ -3,10 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../view_model/home_cubit/home_cubit.dart';
 import '../../view_model/home_cubit/home_state.dart';
-import 'new_movie_item.dart';
+import 'movie_item.dart';
 
-class NewMoviesList extends StatelessWidget {
-  const NewMoviesList({super.key});
+class ComingSoonMoviesList extends StatelessWidget {
+  const ComingSoonMoviesList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,18 +14,17 @@ class NewMoviesList extends StatelessWidget {
       builder: (context, state) {
         var cubit = HomeCubit.of(context);
         return SizedBox(
-          height: 380,
+          height: 302,
           child: ListView.builder(
-            itemCount: cubit.nowPlayingMoviesList.length,
+            itemCount: cubit.comingSoonMoviesList.length,
             physics: const BouncingScrollPhysics(),
             shrinkWrap: true,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
-                padding:
-                    const EdgeInsetsDirectional.only(start: 24, bottom: 20),
-                child: NewMovieItem(
-                  movie: cubit.nowPlayingMoviesList[index],
+                padding: const EdgeInsets.only(left: 24, bottom: 30),
+                child: MovieItem(
+                  movie: cubit.comingSoonMoviesList[index],
                 ),
               );
             },
@@ -35,5 +34,3 @@ class NewMoviesList extends StatelessWidget {
     );
   }
 }
-
-class NowPlayingMovieCubit {}

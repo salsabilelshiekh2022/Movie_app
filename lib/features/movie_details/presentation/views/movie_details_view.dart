@@ -7,6 +7,7 @@ import 'package:movie_app/features/Home/presentation/views/widgets/header.dart';
 
 import '../../../../core/utils/app_text_styles.dart';
 import '../../../../core/utils/spacing.dart';
+import '../../../Home/data/models/movie_model.dart';
 import 'widgets/cast_list.dart';
 import 'widgets/movie_details.dart';
 import 'widgets/movie_story.dart';
@@ -14,7 +15,8 @@ import 'widgets/photos_list.dart';
 import 'widgets/trailers_list.dart';
 
 class MovieDetailsView extends StatelessWidget {
-  const MovieDetailsView({super.key});
+  const MovieDetailsView({super.key, required this.movie});
+  final BaseMovie movie;
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +30,16 @@ class MovieDetailsView extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.network(
-                  "https://i.pinimg.com/564x/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg",
+                  "https://image.tmdb.org/t/p/w500${movie.posterImg}",
                   width: double.infinity,
                   height: 350,
                   fit: BoxFit.fill,
                 ),
-                const MovieDetails(),
-                const Header(title: "Avengers: Endgame"),
-                const MovieStory(),
+                MovieDetails(
+                  rating: movie.voteAverage.toString().substring(0, 3),
+                ),
+                Header(title: movie.title),
+                MovieStory(movie: movie),
                 const Header(title: "Cast:"),
                 const CastList(),
                 GestureDetector(
@@ -70,7 +74,9 @@ class MovieDetailsView extends StatelessWidget {
             child: AnotherAuthButton(
               title: "Book Now ",
               onTap: () {
-                AppRouter.navigateTo(const BookProcessView());
+                AppRouter.navigateTo(BookProcessView(
+                  movie: movie,
+                ));
               },
             ),
           )

@@ -3,7 +3,7 @@ import 'package:movie_app/core/router/app_router.dart';
 import 'package:movie_app/core/utils/app_assets.dart';
 import 'package:movie_app/core/utils/app_colors.dart';
 
-import '../../../welcome/presentation/views/welcome_view.dart';
+import '../../../Auth/presentation/views/sign_in_view.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -16,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 2), () {
-      AppRouter.navigateAndPop(const WelcomeView());
+      AppRouter.navigateAndPop(const SignInView());
     });
     super.initState();
   }

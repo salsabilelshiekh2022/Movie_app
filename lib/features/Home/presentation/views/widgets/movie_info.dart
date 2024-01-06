@@ -5,13 +5,16 @@ import 'movie_cinema.dart';
 import 'movie_rating.dart';
 
 class MovieInfo extends StatelessWidget {
-  const MovieInfo({super.key});
+  const MovieInfo({super.key, required this.rating});
+  final String rating;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const MovieRating(),
+        MovieRating(
+          rating: rating,
+        ),
         horizontalSpace(8),
         const MovieCinema(),
       ],

@@ -14,7 +14,7 @@ class CastItem extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Image.network(
-            "https://i.pinimg.com/564x/ac/ec/ee/aceceecd1dd4c92c552a3851875f40f1.jpg",
+            "https://i.pinimg.com/564x/71/80/1c/71801c22a45e3bc0f714705ed49cbc9e.jpg",
             width: 100,
             height: 100,
             fit: BoxFit.fill,

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/spacing.dart';
+import '../../../../Home/data/models/movie_model.dart';
 
 class MovieStory extends StatelessWidget {
-  const MovieStory({super.key});
+  const MovieStory({super.key, required this.movie});
+  final BaseMovie movie;
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class MovieStory extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'After the devastating od a Avengers :Infinety war(2018), the universe is in runis. With the help of  remaining allies , the Advengers assamble once more in order to reverce thanos actions.',
+            movie.overView,
             style: TextStyles.font14DarkGrey500.copyWith(fontSize: 12),
           ),
           verticalSpace(8),

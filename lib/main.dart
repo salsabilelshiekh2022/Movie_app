@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/router/app_router.dart';
+import 'package:movie_app/features/splash/presentation/views/splash_view.dart';
 
+import 'core/services/service_locator.dart';
 import 'core/utils/app_colors.dart';
 import 'core/utils/app_constants.dart';
-import 'features/profile_setting/presentation/views/profile_setting_view.dart';
 
 void main() {
+  setupServiceLocator();
   runApp(const MovieTime());
 }
 
@@ -30,7 +32,7 @@ class MovieTime extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Movie Time ',
       onGenerateRoute: onGenerate,
-      home: const ProfileScreenView(),
+      home: const SplashView(),
     );
   }
 }

@@ -65,7 +65,7 @@ class _CustomDropDownState extends State<CustomDropDown> {
       items: options.map((String option) {
         return PopupMenuItem<String>(
           value: option,
-          child: Container(
+          child: SizedBox(
             height: 50, // Set the height of each item in the dropdown menu
             child: Center(
               child: Text(option),

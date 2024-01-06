@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:movie_app/core/router/app_router.dart';
+import 'package:movie_app/features/Home/presentation/views/home_view.dart';
 
 import '../../../../../core/utils/app_assets.dart';
 import '../../../../../core/utils/app_text_styles.dart';
@@ -116,9 +118,14 @@ class ProfileSettingsBody extends StatelessWidget {
             ),
           ),
         ),
-        const Align(
+        Align(
           alignment: Alignment.bottomCenter,
-          child: AnotherAuthButton(title: "Save Changes"),
+          child: AnotherAuthButton(
+            title: "Save Changes",
+            onTap: () {
+              AppRouter.navigateAndPop(const HomeView());
+            },
+          ),
         )
       ],
     );

@@ -37,7 +37,9 @@ class HomeAppBar extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              //scaffoldKey.currentState!.openDrawer();
+            },
             child: Image.asset(AppAssets.imagesBars),
           )
         ],

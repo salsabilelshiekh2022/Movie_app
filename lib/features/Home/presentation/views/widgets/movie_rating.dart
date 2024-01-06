@@ -5,7 +5,8 @@ import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/utils/spacing.dart';
 
 class MovieRating extends StatelessWidget {
-  const MovieRating({super.key});
+  const MovieRating({super.key, required this.rating});
+  final String rating;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class MovieRating extends StatelessWidget {
           size: 10,
         ),
         Text(
-          "7.6",
+          rating,
           style: TextStyles.font14White500,
         ),
         Text(
